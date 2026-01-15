@@ -29,10 +29,10 @@
 
 ```mermaid
 graph LR
-    User[User (crypto)] -->|платеж в крипте| SmartContract[Smart Contract]
-    SmartContract -->|кредит крипты| LP[Liquidity Provider]
-    PSP -->|фиат мерчанту| Merchant[Merchant]
+    User["User (crypto)"] -->|платеж в крипте| SmartContract["Smart Contract"]
+    SmartContract -->|кредит крипты| LP["Liquidity Provider"]
+    PSP["PSP (fiat)"] -->|фиат мерчанту| Merchant["Merchant"]
     LP -->|офчейн фиат| PSP
-    Protocol[Routing & Ledger] --> LP
+    Protocol["Routing & Ledger"] --> LP
     Protocol --> PSP
 ```
